@@ -30,17 +30,28 @@
           </div><!-- /.container-fluid -->
         </nav>
         
-        
 <!--        Main Section-->
         <section id="mainSection">
-            <h1>Dice Roller</h1>
-            
-            <div ng-controller="diceRollerCtrl">
-                <label>Number of Dice:</label>
-                <select ng-options="item as item.id for item in items track by item.id" ng-model="selected"></select>
+            <div class="container-fluid">
+                <h1>Dice Roller</h1>
+
+                <div ng-controller="diceRollerCtrl">
+                    <div class="row">
+                        <!--                            Dice mechanics-->
+                        <div class="col-md-6">
+                            <label>Number of Dice:</label>
+                            <select ng-options="item as item.id for item in diceNumber track by item.id" ng-model="selectedNumber"></select><br>
+                            <label>Type of Dice:</label>
+                            <select ng-options="item as item.id for item in diceType track by item.id" ng-model="selectedType"></select><br>
+                            <button class="btn btn-primary" ng-click="rollDice(selectedNumber.id, selectedType.value)">Roll!</button>  
+                        </div>
+<!--                            Output-->
+                        <div class="col-md-6">
+                            {{results}}
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        
-        
     </body>
 </html>

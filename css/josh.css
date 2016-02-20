@@ -1,0 +1,82 @@
+#body {
+    
+    background-color: #880000;
+    font-family: fantasy;
+    
+}
+
+.DDmain {
+    position: absolute;
+    right: 300px;
+    top: 80px;
+}
+
+#DDmain {
+    border-bottom-width: thick;
+    border-bottom-color: #000000;
+    border-bottom-style: groove;
+    
+    border-top-width: thick;
+    border-top-color: #000000;
+    border-top-style: groove;
+    
+    border-right-width: thick;
+    border-right-color: #000000;
+    border-right-style: groove;
+    
+    border-left-width: thick;
+    border-left-color: #000000;
+    border-left-style: groove;
+}
+
+#DICE {
+    position: absolute;
+    left:75px;
+    top: 175px;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+#ROLLER {
+    position: absolute;
+    right: 80px;
+    top: 170px;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.row {
+    position: absolute;
+    top: 400px;
+    width: 100%;
+    
+    border-bottom-width: thick;
+    border-bottom-color: #000000;
+    border-bottom-style: groove;
+    
+    border-top-width: thick;
+    border-top-color: #000000;
+    border-top-style: groove;
+    
+    border-right-width: thick;
+    border-right-color: #000000;
+    border-right-style: groove;
+    
+    border-left-width: thick;
+    border-left-color: #000000;
+    border-left-style: groove;
+}
+
+.labels {
+    font-size: 15px;
+    color: #330033;
+}
+
+.Results {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.roll-btn {
+    font-size:20px;
+}

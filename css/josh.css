@@ -82,7 +82,6 @@
 
 .labels {
     font-size: 15px;
-    color: #330033;
 }
 
 .Results {
@@ -92,4 +91,21 @@
 
 .roll-btn {
     font-size:20px;
+    background-color: black;
+    
+    border-bottom-width: medium;
+    border-bottom-color: black;
+    border-bottom-style: groove;
+    
+    border-top-width: medium;
+    border-top-color: black;
+    border-top-style: groove;
+    
+    border-left-width: medium;
+    border-left-color: black;
+    border-left-style: groove;
+    
+    border-right-width: medium;
+    border-right-color: black;
+    border-right-style: groove;
 }

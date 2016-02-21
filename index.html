@@ -12,7 +12,7 @@
         <script src="js/angular.min.js"></script>
         <script src="js/app.js"></script>
     </head>
-    <body>
+    <body id="body">
         
 <!--        Navigation Bar-->
         <nav class="navbar navbar-default">
@@ -32,22 +32,28 @@
         
 <!--        Main Section-->
         <section id="mainSection">
-            <div ng-controller="diceRollerCtrl">
-                <div class="container-fluid">
+            <div class="container-fluid">
+                <h1 id="DICE">Dice</h1>
+                <div class="DDmain">
+                    <img src="Images/dungeons-and-dragons-banner.jpg" alt="DDmain" title="D&D, F*** Ya!" id="DDmain">
+                </div>
+                <h1 id="ROLLER">Roller</h1>
+
+                <div ng-controller="diceRollerCtrl" class="custom-cont">
                     <div class="row">
-<!--                            Dice mechanics-->
-                        <div class="col-md-4">
-                            <h1>Dice Roller</h1>
-                            <label>Number of Dice:</label>
+                        <!--                            Dice mechanics-->
+                        <div class="col-md-6">
+                            <label class="labels">Number of Dice:</label>
+>>>>>>> 444312f0ff23abfb73dd3d6c50bb1c07613f7ccd
                             <select ng-options="item as item.id for item in diceNumber track by item.id" ng-model="selectedNumber"></select><br>
-                            <label>Type of Dice:</label>
+                            <label class="labels">Type of Dice:</label>
                             <select ng-options="item as item.id for item in diceType track by item.id" ng-model="selectedType"></select><br>
-                            <button class="btn btn-primary" ng-click="rollDice(selectedNumber.id, selectedType.value)">Roll!</button>  
+                            <button class="btn btn-primary roll-btn" ng-click="rollDice(selectedNumber.id, selectedType.value)">Roll!</button>  
                         </div>
 <!--                            Output-->
                         <div class="col-md-6">
-                            <h2>Results</h2>
-                            {{results}}
+                            <p class="Results">{{results}}</p>
+>>>>>>> 444312f0ff23abfb73dd3d6c50bb1c07613f7ccd
                         </div>
                     </div>
                 </div>

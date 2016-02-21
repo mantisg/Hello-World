@@ -71,6 +71,13 @@
     border-left-style: groove;
 }
 
+.col-md-12 {
+    background-color: #000000;
+    
+}
+
+}
+
 .first {
     margin-top: 50px;
 }
@@ -81,7 +88,7 @@
 }
 
 .labels {
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .Results {
@@ -91,21 +98,25 @@
 
 .roll-btn {
     font-size:20px;
-    background-color: black;
+    background-color: #000000;
     
     border-bottom-width: medium;
-    border-bottom-color: black;
+    border-bottom-color: #000000;
     border-bottom-style: groove;
+    padding-bottom: 15px;
     
     border-top-width: medium;
-    border-top-color: black;
+    border-top-color: #000000;
     border-top-style: groove;
+    padding-top: 15px;
     
     border-left-width: medium;
-    border-left-color: black;
+    border-left-color: #000000;
     border-left-style: groove;
+    padding-left: 15px;
     
     border-right-width: medium;
-    border-right-color: black;
+    border-right-color: #000000;
     border-right-style: groove;
+    padding-right: 15px;
 }

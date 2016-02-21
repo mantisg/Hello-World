@@ -32,13 +32,12 @@
         
 <!--        Main Section-->
         <section id="mainSection">
-            <div class="container-fluid">
-                <h1>Dice Roller</h1>
-
-                <div ng-controller="diceRollerCtrl">
+            <div ng-controller="diceRollerCtrl">
+                <div class="container-fluid">
                     <div class="row">
-                        <!--                            Dice mechanics-->
-                        <div class="col-md-6">
+<!--                            Dice mechanics-->
+                        <div class="col-md-4">
+                            <h1>Dice Roller</h1>
                             <label>Number of Dice:</label>
                             <select ng-options="item as item.id for item in diceNumber track by item.id" ng-model="selectedNumber"></select><br>
                             <label>Type of Dice:</label>
@@ -47,6 +46,7 @@
                         </div>
 <!--                            Output-->
                         <div class="col-md-6">
+                            <h2>Results</h2>
                             {{results}}
                         </div>
                     </div>

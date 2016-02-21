@@ -60,9 +60,14 @@ myApp.controller('diceRollerCtrl', ['$scope', function($scope) {
     }];
     $scope.selectedType = $scope.diceType[0];
     
+    
+//    A function that generates a numberic value based on the type of dice selected.
     $scope.rollDice = function(number, type) {
 //        Declare variables for the number of dice and the type of dice.
         $scope.rolledDiceNumber = number;
+    //        for each(i = 0; i < $scope.rolledDiceNumber.length; i++) {
+    //            console.log('hello world');
+    //        }
         $scope.rolledDiceType = type;
 //        Generate a random number based off whatever dice type is selected.
         $scope.die = Math.floor((Math.random() * $scope.rolledDiceType) + 1);

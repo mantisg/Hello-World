@@ -61,17 +61,44 @@ myApp.controller('diceRollerCtrl', ['$scope', function($scope) {
     $scope.selectedType = $scope.diceType[0];
     
     
-//    A function that generates a numberic value based on the type of dice selected.
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    // Declare the varable that will house the diceTotal array. This array is what will be used to display multiple dice per roll.
+    $scope.results = [];
+    
+    // A function that generates a numberic value based on the type of dice selected.
     $scope.rollDice = function(number, type) {
-//        Declare variables for the number of dice and the type of dice.
+        // Whenever the roll button in clicked, empty the diceTotal array.
+        $scope.results = [];
+        
+        // Declare variables for the number of dice and the type of dice. 
         $scope.rolledDiceNumber = number;
         $scope.rolledDiceType = type;
-//        Generate a random number based off whatever dice type is selected.
-        $scope.die = Math.floor((Math.random() * $scope.rolledDiceType) + 1);
-//        Store values into results varuable. This will be the varuable that gets displayed in the view...
-        $scope.results = $scope.die;
+        
+        // Function that generates the result based on whatever dice type is selected.
+        $scope.generateDice = function() {
+            // Generate a random number based off whatever dice type is selected.
+            $scope.die = Math.floor((Math.random() * $scope.rolledDiceType) + 1);
+            $scope.results.push($scope.die);
+        }
+        
+        // Run the generateDice function based on the dice number value.
+        for (i = 0; i < $scope.rolledDiceNumber; i++) {
+            $scope.generateDice();
+        }           
     }
     
-    console.log($scope.rolledDiceNumber);
-    
+    // Hide Future feature. History Section.
+    $scope.hideHistory = false;
+
 }]);

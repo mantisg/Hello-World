@@ -51,12 +51,20 @@
                         </div>
 <!--                            Output-->
                         <div class="col-md-6">
-                            <p class="Results">{{results}}</p>
+                            <span style="padding: 15px;" ng-repeat="n in results track by $index" class="Results">{{n}}</span>
+<!--
+                            <div ng-repeat="n in results track by $index" >
+                                {{n}}
+                            </div>
+-->
                         </div>
                     </div>
-                    <div class="row history">
+                    <div ng-if="hideHistory" class="row history">
                         <div class="col-md-12">
                             <h2>History</h2>
+                            <div ng-repeat="n in historyArray track by $index" class="history-collection">
+
+                            </div>
                         </div>
                     </div>
                 </div>

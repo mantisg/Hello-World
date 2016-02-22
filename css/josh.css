@@ -36,15 +36,15 @@
     left:75px;
     top: 175px;
     color: #ffffff;
-    font-size: 50px;
+    font-size: 75px;
 }
 
 #ROLLER {
     position: absolute;
-    right: 80px;
+    right: 50px;
     top: 170px;
     color: #ffffff;
-    font-size: 50px;
+    font-size: 75px;
 }
 
 .row {
@@ -71,6 +71,13 @@
     border-left-style: groove;
 }
 
+.col-md-12 {
+    background-color: #000000;
+    
+}
+
+}
+
 .first {
     margin-top: 50px;
 }
@@ -81,8 +88,7 @@
 }
 
 .labels {
-    font-size: 15px;
-    color: #330033;
+    font-size: 20px;
 }
 
 .Results {
@@ -92,4 +98,25 @@
 
 .roll-btn {
     font-size:20px;
+    background-color: #000000;
+    
+    border-bottom-width: medium;
+    border-bottom-color: #000000;
+    border-bottom-style: groove;
+    padding-bottom: 15px;
+    
+    border-top-width: medium;
+    border-top-color: #000000;
+    border-top-style: groove;
+    padding-top: 15px;
+    
+    border-left-width: medium;
+    border-left-color: #000000;
+    border-left-style: groove;
+    padding-left: 15px;
+    
+    border-right-width: medium;
+    border-right-color: #000000;
+    border-right-style: groove;
+    padding-right: 15px;
 }

@@ -42,11 +42,12 @@
                 <div ng-controller="diceRollerCtrl" class="custom-cont">
                     <div class="row first">
 <!--                            Dice mechanics-->
+         <br>
                         <div class="col-md-6">
                             <label class="labels">Number of Dice:</label>
-                            <select ng-options="item as item.id for item in diceNumber track by item.id" ng-model="selectedNumber"></select><br>
+                            <select ng-options="item as item.id for item in diceNumber track by item.id" ng-model="selectedNumber"></select><br><br>
                             <label class="labels">Type of Dice:</label>
-                            <select ng-options="item as item.id for item in diceType track by item.id" ng-model="selectedType"></select><br>
+                            <select ng-options="item as item.id for item in diceType track by item.id" ng-model="selectedType"></select><br><br><br>
                             <button class="btn btn-primary roll-btn" ng-click="rollDice(selectedNumber.id, selectedType.value)">Roll!</button>  
                         </div>
 <!--                            Output-->

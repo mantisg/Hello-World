@@ -100,6 +100,6 @@ myApp.controller('diceRollerCtrl', ['$scope', function($scope) {
     
     // Hide Future feature. History Section.
     // Josh... If you are able to find your way here and understand what is going on all by yourself. I will be very proud of you P.S. Love ya budy :)
-    $scope.hideHistory = false;
+    $scope.hideHistory = false; 
 
 }]);

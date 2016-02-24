@@ -91,7 +91,8 @@ myApp.controller('diceRollerCtrl', ['$scope', function($scope) {
     
     
     
-    
+    $scope.modifierValue = 'hello';
+    console.log($scope.modifierValue);
     
     
     

@@ -40,8 +40,10 @@
                 <h1 id="ROLLER">Roller</h1>
 
                 <div ng-controller="diceRollerCtrl" class="custom-cont">
-                    <div class="row thick-boarders first">
-<!--                            Dice mechanics-->
+                    <div class="thick-borders first">
+<!--                          Dice mechanics-->
+         <br>
+                    <div class="col-md-4">
                         <div class="col-md-6 first">
                             <label class="labels">Number of Dice:</label>
                             <select ng-options="item as item.id for item in diceNumber track by item.id" ng-model="selectedNumber"></select><br><br>
@@ -55,15 +57,7 @@
                             <span style="padding: 15px;" ng-repeat="n in results track by $index" class="Results">{{n}}</span>
                         </div>
                     </div>
-                    <div ng-if="showHistory" class="row">
-<!--                        History-->
-                        <div class="col-md-5 thick-boarders history-section">
-                            <h2>History</h2>
-                            <div ng-repeat="s in total track by $index" class="history-collection">
-                                <span ng-repeat="r in s track by $index" class="Results">{{r}}</span>
-                            </div>
-                        </div>
-                        <div class="col-md-7 thick-boarders">
+                        <div class="col-md-7 thick-borders">
                             <div class="row">
                                 <div class="col-md-3">
                                     <h2>Modifiers</h2>
@@ -76,6 +70,14 @@
                                         {{n}}
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    <div ng-if="showHistory">
+<!--                        History-->
+                        <div class="col-md-10 thick-borders history-section">
+                            <h2>History</h2>
+                            <div ng-repeat="s in total track by $index" class="history-collection">
+                                <span ng-repeat="r in s track by $index" class="Results">{{r}}</span>
                             </div>
                         </div>
                     </div>

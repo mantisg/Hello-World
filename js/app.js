@@ -106,7 +106,7 @@ myApp.controller('diceRollerCtrl', ['$scope', function($scope) {
     $scope.totalDisplay = [];
     
     // A function that generates a numberic value based on the type of dice selected.
-    $scope.rollDice = function(number, type) {
+    $scope.rollDice = function (number, type) {
         // Whenever the roll button in clicked, empty the diceTotal array.
         $scope.results = [];
         
@@ -115,12 +115,12 @@ myApp.controller('diceRollerCtrl', ['$scope', function($scope) {
         $scope.rolledDiceType = type;
         
         // Function that generates the result based on whatever dice type is selected.
-        $scope.generateDice = function() {
+        $scope.generateDice = function () {
             // Generate a random number based off whatever dice type is selected.
             $scope.die = Math.floor((Math.random() * $scope.rolledDiceType) + 1);
             $scope.results.push($scope.die);
             
-        }
+        };
         
 //        $scope.totalDisplay.push($scope.die);
         $scope.total.push($scope.results);
@@ -135,9 +135,9 @@ myApp.controller('diceRollerCtrl', ['$scope', function($scope) {
     };
     
     // A function that clears the history array.
-    $scope.clearHistory = function() {
+    $scope.clearHistory = function () {
         $scope.results = [];
-        $scope.total = [];          
+        $scope.total = [];
     };
     
     

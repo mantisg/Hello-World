@@ -94,6 +94,25 @@
 .Results {
     font-size: 50px;
     color: #ffffff;
+    
+    border-bottom-width: medium;
+    border-bottom-color: #000000;
+    border-bottom-style: groove;
+    padding-bottom: 15px;
+    
+    border-top-width: medium;
+    border-top-color: #000000;
+    border-top-style: groove;
+    padding-top: 15px;
+    
+    border-left-width: medium;
+    border-left-color: #000000;
+    border-left-style: groove;
+    padding-left: 15px;
+    
+    border-right-width: medium;
+    border-right-color: #000000;
+    border-right-style: groove;
 }
 
 .roll-btn {

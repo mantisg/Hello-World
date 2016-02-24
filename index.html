@@ -69,7 +69,12 @@
                                     <h2>Modifiers</h2>
                                 </div>                            
                                 <div class="col-md-9">
-                                    <input class="first" type="range" min="0" max="50" value="25" />
+                                    <input class="first" type="range" min="0" max="50" value="25" step="5" />
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-1 modifier-number" ng-repeat="n in modifier track by $index">
+                                        {{n}}
+                                    </div>
                                 </div>
                             </div>
                         </div>

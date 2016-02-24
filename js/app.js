@@ -60,6 +60,32 @@ myApp.controller('diceRollerCtrl', ['$scope', function($scope) {
     }];
     $scope.selectedType = $scope.diceType[0];
     
+//    Data for 'Type of Dice' Dropdown.    
+//    $scope.modifier = [{
+//      id: 1
+//    }, {
+//      id: 2
+//    }, {
+//      id: 3
+//    }, {
+//      id: 4
+//    }, {
+//      id: 5
+//    }, {
+//      id: 6
+//    }, {
+//      id: 7
+//    }, {
+//      id: 8
+//    }, {
+//      id: 9
+//    }, {
+//      id: 10
+//    }];
+//    $scope.modifier = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    $scope.modifier = [5, 4, 3, 2, 1, 0, '-1', '-2', '-3', '-4', '-5'];
+//    $scope.modifier = $scope.modifier[0];
+    
     
     
     

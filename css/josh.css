@@ -87,6 +87,11 @@
     background-color: #000000;
 }
 
+.modifier-number {
+/*    width: 57.5px;*/
+    width: 6.70%;
+}
+
 .labels {
     font-size: 20px;
 }

@@ -40,7 +40,7 @@
                 <h1 id="ROLLER">Roller</h1>
 
                 <div ng-controller="diceRollerCtrl" class="custom-cont">
-                    <div class="row first">
+                    <div class="row thick-boarders first">
 <!--                            Dice mechanics-->
                         <div class="col-md-6 first">
                             <label class="labels">Number of Dice:</label>
@@ -55,12 +55,22 @@
                             <span style="padding: 15px;" ng-repeat="n in results track by $index" class="Results">{{n}}</span>
                         </div>
                     </div>
-                    <div ng-if="showHistory" class="row history">
+                    <div ng-if="showHistory" class="row">
 <!--                        History-->
-                        <div class="col-md-12 history-section">
+                        <div class="col-md-5 thick-boarders history-section">
                             <h2>History</h2>
                             <div ng-repeat="s in total track by $index" class="history-collection">
                                 <span ng-repeat="r in s track by $index" class="Results">{{r}}</span>
+                            </div>
+                        </div>
+                        <div class="col-md-7 thick-boarders">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h2>Modifiers</h2>
+                                </div>                            
+                                <div class="col-md-9">
+                                    <input class="first" type="range" min="0" max="50" value="25" />
+                                </div>
                             </div>
                         </div>
                     </div>

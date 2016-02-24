@@ -48,7 +48,8 @@
                             <select ng-options="item as item.id for item in diceNumber track by item.id" ng-model="selectedNumber"></select><br><br>
                             <label class="labels">Type of Dice:</label>
                             <select ng-options="item as item.id for item in diceType track by item.id" ng-model="selectedType"></select><br><br><br>
-                            <button class="btn btn-primary roll-btn" ng-click="rollDice(selectedNumber.id, selectedType.value)">Roll!</button>  
+                            <button class="btn btn-primary roll-btn" ng-click="rollDice(selectedNumber.id, selectedType.value)">Roll!</button>
+                            <button class="btn btn-primary roll-btn" ng-click="clearHistory();">Clear</button>
                         </div>
 <!--                            Output-->
                         <div class="col-md-6">
@@ -60,11 +61,12 @@
 -->
                         </div>
                     </div>
-                    <div ng-if="hideHistory" class="row history">
+                    <div ng-if="showHistory" class="row history">
                         <div class="col-md-12">
                             <h2>History</h2>
-                            <div ng-repeat="n in historyArray track by $index" class="history-collection">
-
+                            <div ng-repeat="s in total track by $index" class="history-collection">
+                                <span ng-repeat="r in s track by $index">{{r}}</span>
+<!--                                <span ng-repeat="n in results track by $index">{{n}}</span>-->
                             </div>
                         </div>
                     </div>

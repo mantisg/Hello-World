@@ -47,7 +47,7 @@
     font-size: 75px;
 }
 
-.row {
+.thick-borders {
 /*
     position: absolute;
     top: 400px;
@@ -71,29 +71,37 @@
     border-left-style: groove;
 }
 
-.col-md-12 {
-    background-color: #000000;
-    
-}
-
-}
-
 .first {
-    margin-top: 50px;
+    margin-top: 25px;
+    /*background-color: #000000;*/
 }
 
+/*
 .history {
-    width: 30%;
+    max-width: 30%;
+    width: auto;
     height: auto;
+}
+*/
+
+.history-section {
+    background-color: #000000;
+}
+
+.modifier-number {
+/*    width: 57.5px;*/
+    width: 6.70%;
 }
 
 .labels {
     font-size: 20px;
 }
 
+/* pretty obvious */
 .Results {
     font-size: 50px;
     color: #ffffff;
+
     
     border-bottom-width: medium;
     border-bottom-color: #000000;
@@ -113,8 +121,11 @@
     border-right-width: medium;
     border-right-color: #000000;
     border-right-style: groove;
+
+    padding: 10px;
 }
 
+/* pretty obvious... */
 .roll-btn {
     font-size:20px;
     background-color: #000000;
@@ -138,4 +149,11 @@
     border-right-color: #000000;
     border-right-style: groove;
     padding-right: 15px;
+}
+
+/* Modifier */
+.col-md-7 {
+    position: relative;
+    top: 250px;
+    right: 98px;
 }

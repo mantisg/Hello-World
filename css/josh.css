@@ -97,7 +97,7 @@
     font-size: 20px;
 }
 
-/* pretty obvious */
+/*                              pretty obvious */
 .Results {
     font-size: 50px;
     color: #ffffff;
@@ -123,9 +123,31 @@
     border-right-style: groove;
 
     padding: 10px;
+    
 }
 
-/* pretty obvious... */
+/*                          results animation - move to history */
+.animation {
+    -webkit-animation-name: transfer;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    
+    @-webkit-keyframes transfer {
+        0% {left: 200px; top: 350px;}
+        100% {left: 150px; top: 900px;}
+    }
+    
+    animation-name: transfer;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+    @-keyframes transfer {
+        0% {left: 200px; top: 350px;}
+        100% {left: 150px; top: 900px;}
+    }
+}    
+
+/*                          pretty obvious... */
 .roll-btn {
     font-size:20px;
     background-color: #000000;
@@ -151,7 +173,7 @@
     padding-right: 15px;
 }
 
-/* Modifier */
+/*                               Modifier */
 .col-md-7 {
     position: relative;
     top: 250px;

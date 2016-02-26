@@ -1,4 +1,4 @@
-'use strict[]';
+'use strict[';
 
 var myApp = angular.module('myApp', []);
 
@@ -85,7 +85,7 @@ myApp.controller('diceRollerCtrl', ['$scope', function ($scope) {
 //      id: 10
 //    }];
 //    $scope.modifier = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    $scope.modifier = [5, 4, 3, 2, 1, 0, '-1', '-2', '-3', '-4', '-5'];
+    $scope.modifier = [-5, -4, -3, -2, -1, 0, '1', '2', '3', '4', '5'];
 //    $scope.modifier = $scope.modifier[0];
     
     

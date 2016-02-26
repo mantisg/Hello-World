@@ -7,6 +7,7 @@
 <!--        Reference to Bootstrap-->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/josh.css">
+        <link rel="stylesheet" type="text/css" href="css/animation.css">
         
 <!--        Reference to AngularJs-->
         <script src="js/angular.min.js"></script>
@@ -53,9 +54,9 @@
                             <button class="btn btn-primary roll-btn" ng-click="clearHistory();">Clear</button>
                         </div>
 <!--                            Output-->
-                        <div class="animation">
+                        <div id="resultsmove" class="animation">
                             <div class="col-md-6">
-                            <span style="padding: 15px;" ng-repeat="n in results track by $index" id="resultsmove" class="Results">{{n}}</span>
+                            <span style="padding: 15px;" ng-repeat="n in results track by $index" class="Results">{{n}}</span>
                             </div>
                         </div>    
                     </div>

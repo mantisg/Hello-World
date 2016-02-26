@@ -1,62 +1,64 @@
+'use strict[]';
+
 var myApp = angular.module('myApp', []);
 
-myApp.controller('diceRollerCtrl', ['$scope', function($scope) {
+myApp.controller('diceRollerCtrl', ['$scope', function ($scope) {
     
 //    Data for 'Number of Dice' Dropdown.
     $scope.diceNumber = [{
-      id: 1
+        id: 1
     }, {
-      id: 2
+        id: 2
     }, {
-      id: 3
+        id: 3
     }, {
-      id: 4
+        id: 4
     }, {
-      id: 5
+        id: 5
     }, {
-      id: 6
+        id: 6
     }, {
-      id: 7
+        id: 7
     }, {
-      id: 8
+        id: 8
     }, {
-      id: 9
+        id: 9
     }, {
-      id: 10
+        id: 10
     }];
     $scope.selectedNumber = $scope.diceNumber[0];
     
 //    Data for 'Type of Dice' Dropdown.    
     $scope.diceType = [{
-      id: 'D3',
-      value: 3
+        id: 'D3',
+        value: 3
     }, {
-      id: 'D4',
-      value: 4
+        id: 'D4',
+        value: 4
     }, {
-      id: 'D6',
-      value: 6
+        id: 'D6',
+        value: 6
     }, {
-      id: 'D8',
-      value: 8
+        id: 'D8',
+        value: 8
     }, {
-      id: 'D10',
-      value: 10
+        id: 'D10',
+        value: 10
     }, {
-      id: 'D12',
-      value: 12
+        id: 'D12',
+        value: 12
     }, {
-      id: 'D14',
-      value: 14
+        id: 'D14',
+        value: 14
     }, {
-      id: 'D16',
-      value: 16
+        id: 'D16',
+        value: 16
     }, {
-      id: 'D18',
-      value: 18
+        id: 'D18',
+        value: 18
     }, {
-      id: 'D20y',
-      value: 20
+        id: 'D20y',
+        value: 20
     }];
     $scope.selectedType = $scope.diceType[0];
     

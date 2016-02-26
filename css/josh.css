@@ -101,7 +101,7 @@
 .Results {
     font-size: 50px;
     color: #ffffff;
-
+    position:relative;
     
     border-bottom-width: medium;
     border-bottom-color: #000000;
@@ -124,27 +124,6 @@
 
     padding: 10px;
     
-}
-
-/*                          results animation - move to history */
-.animation {
-    -webkit-animation-name: transfer;
-    -webkit-animation-duration: 4s;
-    -webkit-animation-iteration-count: infinite;
-    
-    @-webkit-keyframes transfer {
-        0% {left: 200px; top: 350px;}
-        100% {left: 150px; top: 900px;}
-    }
-    
-    animation-name: transfer;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    
-    @-keyframes transfer {
-        0% {left: 200px; top: 350px;}
-        100% {left: 150px; top: 900px;}
-    }
 }    
 
 /*                          pretty obvious... */
